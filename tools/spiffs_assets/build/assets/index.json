@@ -1,0 +1,321 @@
+{
+    "version": 1,
+    "srmodels": "srmodels.bin",
+    "text_font": "font_puhui_common_20_4.bin",
+    "emoji_collection": [
+        {
+            "name": "neutral",
+            "file": "neutral.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "happy",
+            "file": "happy.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "sad",
+            "file": "sad.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "angry",
+            "file": "angry.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "surprised",
+            "file": "surprised.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "thinking",
+            "file": "thinking.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "winking",
+            "file": "winking.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "cool",
+            "file": "cool.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "laughing",
+            "file": "laughing.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "loving",
+            "file": "loving.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "crying",
+            "file": "crying.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "confused",
+            "file": "confused.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "embarrassed",
+            "file": "embarrassed.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "sleepy",
+            "file": "sleepy.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "confident",
+            "file": "confident.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "delicious",
+            "file": "delicious.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "kiss",
+            "file": "kiss.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "relaxed",
+            "file": "relaxed.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "shocked",
+            "file": "shocked.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "silly",
+            "file": "silly.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "icon_speaker_zzz",
+            "file": "icon_speaker_zzz.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "listen",
+            "file": "listen.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "nvs_reset",
+            "file": "nvs_reset.eaf",
+            "eaf": {
+                "loop": false,
+                "fps": 5
+            }
+        },
+        {
+            "name": "wificonfig",
+            "file": "wificonfig.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 1
+            }
+        },
+        {
+            "name": "calibration",
+            "file": "calibration.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "scanning",
+            "file": "scanning.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "launch",
+            "file": "launch.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        },
+        {
+            "name": "remote_mode",
+            "file": "remote_mode.eaf",
+            "eaf": {
+                "loop": true,
+                "fps": 30
+            }
+        }
+    ],
+    "icon_collection": [
+        {
+            "name": "listen",
+            "file": "listen.eaf"
+        }
+    ],
+    "layout": [
+        {
+            "type": "anim",
+            "name": "eye_anim",
+            "align": "GFX_ALIGN_LEFT_MID",
+            "x": 0,
+            "y": 0,
+            "anim": {
+                "mirror": "false"
+            }
+        },
+        {
+            "type": "anim",
+            "name": "emerg_dlg",
+            "align": "GFX_ALIGN_LEFT_MID",
+            "x": 0,
+            "y": 0,
+            "anim": {
+                "mirror": "false"
+            }
+        },
+        {
+            "type": "label",
+            "name": "toast_label",
+            "align": "GFX_ALIGN_TOP_LEFT",
+            "x": 80,
+            "y": 24,
+            "width": 140,
+            "height": 24,
+            "label": {
+                "color": 16777215,
+                "text_align": "GFX_TEXT_ALIGN_CENTER",
+                "long_mode": {
+                    "type": "GFX_LABEL_LONG_SCROLL",
+                    "loop": true,
+                    "speed": 10
+                }
+            }
+        },
+        {
+            "type": "label",
+            "name": "clock_label",
+            "align": "GFX_ALIGN_TOP_LEFT",
+            "x": -100,
+            "y": -100,
+            "width": 1,
+            "height": 1,
+            "label": {
+                "color": 0,
+                "text_align": "GFX_TEXT_ALIGN_CENTER",
+                "long_mode": {
+                    "type": "GFX_LABEL_LONG_CLIP"
+                }
+            }
+        },
+        {
+            "type": "anim",
+            "name": "listen_anim",
+            "align": "GFX_ALIGN_TOP_MID",
+            "x": 0,
+            "y": 8,
+            "anim": {
+                "mirror": "false"
+            }
+        },
+        {
+            "type": "timer",
+            "name": "clock_timer",
+            "timer": {
+                "period": 1000,
+                "repeat_count": -1
+            }
+        },
+        {
+            "type": "qrcode",
+            "name": "qrcode",
+            "align": "GFX_ALIGN_CENTER",
+            "x": 0,
+            "y": 10,
+            "qrcode": {
+                "size": 120
+            }
+        }
+    ]
+}
