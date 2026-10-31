@@ -392,10 +392,10 @@ namespace Lang {
     namespace Sounds {
 
         // Sound: activation
-        extern const char ogg_en_us_activation_start[] asm("_binary_en_US_activation_ogg_start");
-        extern const char ogg_en_us_activation_end[]   asm("_binary_en_US_activation_ogg_end");
         extern const char ogg_zh_cn_activation_start[] asm("_binary_zh_CN_activation_ogg_start");
         extern const char ogg_zh_cn_activation_end[]   asm("_binary_zh_CN_activation_ogg_end");
+        extern const char ogg_en_us_activation_start[] asm("_binary_en_US_activation_ogg_start");
+        extern const char ogg_en_us_activation_end[]   asm("_binary_en_US_activation_ogg_end");
         inline std::string_view OGG_ACTIVATION() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -407,10 +407,10 @@ namespace Lang {
         }
 
         // Sound: activation_error
-        extern const char ogg_en_us_activation_error_start[] asm("_binary_en_US_activation_error_ogg_start");
-        extern const char ogg_en_us_activation_error_end[]   asm("_binary_en_US_activation_error_ogg_end");
         extern const char ogg_zh_cn_activation_error_start[] asm("_binary_zh_CN_activation_error_ogg_start");
         extern const char ogg_zh_cn_activation_error_end[]   asm("_binary_zh_CN_activation_error_ogg_end");
+        extern const char ogg_en_us_activation_error_start[] asm("_binary_en_US_activation_error_ogg_start");
+        extern const char ogg_en_us_activation_error_end[]   asm("_binary_en_US_activation_error_ogg_end");
         inline std::string_view OGG_ACTIVATION_ERROR() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -422,10 +422,10 @@ namespace Lang {
         }
 
         // Sound: calibration_enter
-        extern const char ogg_en_us_calibration_enter_start[] asm("_binary_en_US_calibration_enter_ogg_start");
-        extern const char ogg_en_us_calibration_enter_end[]   asm("_binary_en_US_calibration_enter_ogg_end");
         extern const char ogg_zh_cn_calibration_enter_start[] asm("_binary_zh_CN_calibration_enter_ogg_start");
         extern const char ogg_zh_cn_calibration_enter_end[]   asm("_binary_zh_CN_calibration_enter_ogg_end");
+        extern const char ogg_en_us_calibration_enter_start[] asm("_binary_en_US_calibration_enter_ogg_start");
+        extern const char ogg_en_us_calibration_enter_end[]   asm("_binary_en_US_calibration_enter_ogg_end");
         inline std::string_view OGG_CALIBRATION_ENTER() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -437,10 +437,10 @@ namespace Lang {
         }
 
         // Sound: calibration_exit
-        extern const char ogg_en_us_calibration_exit_start[] asm("_binary_en_US_calibration_exit_ogg_start");
-        extern const char ogg_en_us_calibration_exit_end[]   asm("_binary_en_US_calibration_exit_ogg_end");
         extern const char ogg_zh_cn_calibration_exit_start[] asm("_binary_zh_CN_calibration_exit_ogg_start");
         extern const char ogg_zh_cn_calibration_exit_end[]   asm("_binary_zh_CN_calibration_exit_ogg_end");
+        extern const char ogg_en_us_calibration_exit_start[] asm("_binary_en_US_calibration_exit_ogg_start");
+        extern const char ogg_en_us_calibration_exit_end[]   asm("_binary_en_US_calibration_exit_ogg_end");
         inline std::string_view OGG_CALIBRATION_EXIT() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -452,10 +452,10 @@ namespace Lang {
         }
 
         // Sound: close_aec
-        extern const char ogg_en_us_close_aec_start[] asm("_binary_en_US_close_aec_ogg_start");
-        extern const char ogg_en_us_close_aec_end[]   asm("_binary_en_US_close_aec_ogg_end");
         extern const char ogg_zh_cn_close_aec_start[] asm("_binary_zh_CN_close_aec_ogg_start");
         extern const char ogg_zh_cn_close_aec_end[]   asm("_binary_zh_CN_close_aec_ogg_end");
+        extern const char ogg_en_us_close_aec_start[] asm("_binary_en_US_close_aec_ogg_start");
+        extern const char ogg_en_us_close_aec_end[]   asm("_binary_en_US_close_aec_ogg_end");
         inline std::string_view OGG_CLOSE_AEC() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -467,10 +467,10 @@ namespace Lang {
         }
 
         // Sound: connect_error
-        extern const char ogg_en_us_connect_error_start[] asm("_binary_en_US_connect_error_ogg_start");
-        extern const char ogg_en_us_connect_error_end[]   asm("_binary_en_US_connect_error_ogg_end");
         extern const char ogg_zh_cn_connect_error_start[] asm("_binary_zh_CN_connect_error_ogg_start");
         extern const char ogg_zh_cn_connect_error_end[]   asm("_binary_zh_CN_connect_error_ogg_end");
+        extern const char ogg_en_us_connect_error_start[] asm("_binary_en_US_connect_error_ogg_start");
+        extern const char ogg_en_us_connect_error_end[]   asm("_binary_en_US_connect_error_ogg_end");
         inline std::string_view OGG_CONNECT_ERROR() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -482,10 +482,10 @@ namespace Lang {
         }
 
         // Sound: connecting
-        extern const char ogg_en_us_connecting_start[] asm("_binary_en_US_connecting_ogg_start");
-        extern const char ogg_en_us_connecting_end[]   asm("_binary_en_US_connecting_ogg_end");
         extern const char ogg_zh_cn_connecting_start[] asm("_binary_zh_CN_connecting_ogg_start");
         extern const char ogg_zh_cn_connecting_end[]   asm("_binary_zh_CN_connecting_ogg_end");
+        extern const char ogg_en_us_connecting_start[] asm("_binary_en_US_connecting_ogg_start");
+        extern const char ogg_en_us_connecting_end[]   asm("_binary_en_US_connecting_ogg_end");
         inline std::string_view OGG_CONNECTING() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -497,10 +497,10 @@ namespace Lang {
         }
 
         // Sound: enter_remote
-        extern const char ogg_en_us_enter_remote_start[] asm("_binary_en_US_enter_remote_ogg_start");
-        extern const char ogg_en_us_enter_remote_end[]   asm("_binary_en_US_enter_remote_ogg_end");
         extern const char ogg_zh_cn_enter_remote_start[] asm("_binary_zh_CN_enter_remote_ogg_start");
         extern const char ogg_zh_cn_enter_remote_end[]   asm("_binary_zh_CN_enter_remote_ogg_end");
+        extern const char ogg_en_us_enter_remote_start[] asm("_binary_en_US_enter_remote_ogg_start");
+        extern const char ogg_en_us_enter_remote_end[]   asm("_binary_en_US_enter_remote_ogg_end");
         inline std::string_view OGG_ENTER_REMOTE() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -512,10 +512,10 @@ namespace Lang {
         }
 
         // Sound: exit_remote
-        extern const char ogg_en_us_exit_remote_start[] asm("_binary_en_US_exit_remote_ogg_start");
-        extern const char ogg_en_us_exit_remote_end[]   asm("_binary_en_US_exit_remote_ogg_end");
         extern const char ogg_zh_cn_exit_remote_start[] asm("_binary_zh_CN_exit_remote_ogg_start");
         extern const char ogg_zh_cn_exit_remote_end[]   asm("_binary_zh_CN_exit_remote_ogg_end");
+        extern const char ogg_en_us_exit_remote_start[] asm("_binary_en_US_exit_remote_ogg_start");
+        extern const char ogg_en_us_exit_remote_end[]   asm("_binary_en_US_exit_remote_ogg_end");
         inline std::string_view OGG_EXIT_REMOTE() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -527,10 +527,10 @@ namespace Lang {
         }
 
         // Sound: hi
-        extern const char ogg_en_us_hi_start[] asm("_binary_en_US_hi_ogg_start");
-        extern const char ogg_en_us_hi_end[]   asm("_binary_en_US_hi_ogg_end");
         extern const char ogg_zh_cn_hi_start[] asm("_binary_zh_CN_hi_ogg_start");
         extern const char ogg_zh_cn_hi_end[]   asm("_binary_zh_CN_hi_ogg_end");
+        extern const char ogg_en_us_hi_start[] asm("_binary_en_US_hi_ogg_start");
+        extern const char ogg_en_us_hi_end[]   asm("_binary_en_US_hi_ogg_end");
         inline std::string_view OGG_HI() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -542,10 +542,10 @@ namespace Lang {
         }
 
         // Sound: open_aec
-        extern const char ogg_en_us_open_aec_start[] asm("_binary_en_US_open_aec_ogg_start");
-        extern const char ogg_en_us_open_aec_end[]   asm("_binary_en_US_open_aec_ogg_end");
         extern const char ogg_zh_cn_open_aec_start[] asm("_binary_zh_CN_open_aec_ogg_start");
         extern const char ogg_zh_cn_open_aec_end[]   asm("_binary_zh_CN_open_aec_ogg_end");
+        extern const char ogg_en_us_open_aec_start[] asm("_binary_en_US_open_aec_ogg_start");
+        extern const char ogg_en_us_open_aec_end[]   asm("_binary_en_US_open_aec_ogg_end");
         inline std::string_view OGG_OPEN_AEC() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -557,10 +557,10 @@ namespace Lang {
         }
 
         // Sound: pain
-        extern const char ogg_en_us_pain_start[] asm("_binary_en_US_pain_ogg_start");
-        extern const char ogg_en_us_pain_end[]   asm("_binary_en_US_pain_ogg_end");
         extern const char ogg_zh_cn_pain_start[] asm("_binary_zh_CN_pain_ogg_start");
         extern const char ogg_zh_cn_pain_end[]   asm("_binary_zh_CN_pain_ogg_end");
+        extern const char ogg_en_us_pain_start[] asm("_binary_en_US_pain_ogg_start");
+        extern const char ogg_en_us_pain_end[]   asm("_binary_en_US_pain_ogg_end");
         inline std::string_view OGG_PAIN() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -572,10 +572,10 @@ namespace Lang {
         }
 
         // Sound: upgrade
-        extern const char ogg_en_us_upgrade_start[] asm("_binary_en_US_upgrade_ogg_start");
-        extern const char ogg_en_us_upgrade_end[]   asm("_binary_en_US_upgrade_ogg_end");
         extern const char ogg_zh_cn_upgrade_start[] asm("_binary_zh_CN_upgrade_ogg_start");
         extern const char ogg_zh_cn_upgrade_end[]   asm("_binary_zh_CN_upgrade_ogg_end");
+        extern const char ogg_en_us_upgrade_start[] asm("_binary_en_US_upgrade_ogg_start");
+        extern const char ogg_en_us_upgrade_end[]   asm("_binary_en_US_upgrade_ogg_end");
         inline std::string_view OGG_UPGRADE() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -587,10 +587,10 @@ namespace Lang {
         }
 
         // Sound: welcome
-        extern const char ogg_en_us_welcome_start[] asm("_binary_en_US_welcome_ogg_start");
-        extern const char ogg_en_us_welcome_end[]   asm("_binary_en_US_welcome_ogg_end");
         extern const char ogg_zh_cn_welcome_start[] asm("_binary_zh_CN_welcome_ogg_start");
         extern const char ogg_zh_cn_welcome_end[]   asm("_binary_zh_CN_welcome_ogg_end");
+        extern const char ogg_en_us_welcome_start[] asm("_binary_en_US_welcome_ogg_start");
+        extern const char ogg_en_us_welcome_end[]   asm("_binary_en_US_welcome_ogg_end");
         inline std::string_view OGG_WELCOME() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -602,10 +602,10 @@ namespace Lang {
         }
 
         // Sound: wifi_success
-        extern const char ogg_en_us_wifi_success_start[] asm("_binary_en_US_wifi_success_ogg_start");
-        extern const char ogg_en_us_wifi_success_end[]   asm("_binary_en_US_wifi_success_ogg_end");
         extern const char ogg_zh_cn_wifi_success_start[] asm("_binary_zh_CN_wifi_success_ogg_start");
         extern const char ogg_zh_cn_wifi_success_end[]   asm("_binary_zh_CN_wifi_success_ogg_end");
+        extern const char ogg_en_us_wifi_success_start[] asm("_binary_en_US_wifi_success_ogg_start");
+        extern const char ogg_en_us_wifi_success_end[]   asm("_binary_en_US_wifi_success_ogg_end");
         inline std::string_view OGG_WIFI_SUCCESS() {
             switch (GetLanguage()) {
                 case Code::en_US:
@@ -617,10 +617,10 @@ namespace Lang {
         }
 
         // Sound: wificonfig
-        extern const char ogg_en_us_wificonfig_start[] asm("_binary_en_US_wificonfig_ogg_start");
-        extern const char ogg_en_us_wificonfig_end[]   asm("_binary_en_US_wificonfig_ogg_end");
         extern const char ogg_zh_cn_wificonfig_start[] asm("_binary_zh_CN_wificonfig_ogg_start");
         extern const char ogg_zh_cn_wificonfig_end[]   asm("_binary_zh_CN_wificonfig_ogg_end");
+        extern const char ogg_en_us_wificonfig_start[] asm("_binary_en_US_wificonfig_ogg_start");
+        extern const char ogg_en_us_wificonfig_end[]   asm("_binary_en_US_wificonfig_ogg_end");
         inline std::string_view OGG_WIFICONFIG() {
             switch (GetLanguage()) {
                 case Code::en_US:
