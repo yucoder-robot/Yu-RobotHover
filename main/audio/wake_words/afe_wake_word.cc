@@ -90,12 +90,17 @@ bool AfeWakeWord::Initialize(AudioCodec* codec, srmodel_list_t* models_list) {
         detection_task_stack_ = (StackType_t*)heap_caps_malloc(stack_size, MALLOC_CAP_SPIRAM);
     }
 
+    // TCB 必须位于内部 RAM。本对象由 new/make_unique 创建，当 CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL
+    // 较小时整个对象会落到 PSRAM，成员 TCB 也随之非法（xPortCheckValidTCBMem 断言）。
+    // 改用函数内静态变量（BSS，固定内部 RAM）承载 TCB。
+    static StaticTask_t s_detection_task_tcb;
+
     xTaskCreateStatic([](void* arg) {
         auto this_ = (AfeWakeWord*)arg;
         this_->AudioDetectionTask();
         vTaskDelete(NULL);
     }, "audio_detection", stack_size / sizeof(StackType_t), this, 8,
-       detection_task_stack_, &detection_task_tcb_);
+       detection_task_stack_, &s_detection_task_tcb);
 
     return true;
 }

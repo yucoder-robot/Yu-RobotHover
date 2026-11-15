@@ -73,12 +73,17 @@ void AfeAudioProcessor::Initialize(AudioCodec* codec, int frame_duration_ms, srm
         task_stack_ = (StackType_t*)heap_caps_malloc(stack_size, MALLOC_CAP_SPIRAM);
     }
 
+    // TCB 必须位于内部 RAM。本对象由 new/make_unique 创建，当 CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL
+    // 较小时整个对象会落到 PSRAM，成员 TCB 也随之非法（xPortCheckValidTCBMem 断言）。
+    // 改用函数内静态变量（BSS，固定内部 RAM）承载 TCB。
+    static StaticTask_t s_task_tcb;
+
     xTaskCreateStatic([](void* arg) {
         auto this_ = (AfeAudioProcessor*)arg;
         this_->AudioProcessorTask();
         vTaskDelete(NULL);
-    }, "audio_communication", stack_size / sizeof(StackType_t), this, 6, 
-       task_stack_, &task_tcb_);
+    }, "audio_communication", stack_size / sizeof(StackType_t), this, 6,
+       task_stack_, &s_task_tcb);
 }
 
 AfeAudioProcessor::~AfeAudioProcessor() {

@@ -57,8 +57,8 @@ private:
     std::condition_variable wake_word_cv_;
 
     // Static task resources for audio_detection PSRAM stack
+    // 注意：TCB 不能作为成员变量（对象可能在 PSRAM 中），见 Initialize() 里的 static TCB。
     StackType_t* detection_task_stack_ = nullptr;
-    StaticTask_t detection_task_tcb_;
 
     void StoreWakeWordData(const int16_t* data, size_t size);
     void AudioDetectionTask();

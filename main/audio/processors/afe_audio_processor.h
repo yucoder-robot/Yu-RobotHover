@@ -44,8 +44,8 @@ private:
     std::vector<int16_t> output_buffer_;
 
     // Static task resources for PSRAM stack allocation
+    // 注意：TCB 不能作为成员变量（对象可能在 PSRAM 中），见 Initialize() 里的 static TCB。
     StackType_t* task_stack_ = nullptr;
-    StaticTask_t task_tcb_;
 
     void AudioProcessorTask();
 };
